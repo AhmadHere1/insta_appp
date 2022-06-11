@@ -8,11 +8,11 @@ import { POSTS } from '../database/posts';
 import { BottomTabs } from '../components/HomeScreen/BottomTabs';
 
 
-const Home = () => {
+const Home = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <StatusBar />
-            <Header />
+            <Header navigation={navigation} />
             <Stories />
             <ScrollView>
                 {POSTS.map((post, index) => (

@@ -3,10 +3,12 @@ import React from 'react'
 import { Fontisto } from '@expo/vector-icons';
 import { SimpleLineIcons } from '@expo/vector-icons';
 
-const AddNewPost = () => {
+const AddNewPost = ({ navigation }) => {
     return (
         <View style={styles.mainContainer}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+                navigation.navigate("Home")
+            }}>
                 <SimpleLineIcons name="arrow-left" size={23} color='white'
                     style={styles.icon}
                 />

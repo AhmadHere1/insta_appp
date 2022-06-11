@@ -3,8 +3,9 @@ import React from 'react'
 import { MaterialIcons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
+import { StatusBar } from 'expo-status-bar';
 
-const Header = () => {
+const Header = ({ navigation }) => {
     return (
         <View style={styles.mainContainer}>
             <TouchableOpacity>
@@ -13,8 +14,13 @@ const Header = () => {
                 />
             </TouchableOpacity>
             <View style={styles.ContainerIcon}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                    onPress={() => {
+                        navigation.navigate("NewPostScreen")
+                    }}
+                >
                     <Feather name="plus-square" size={23} color='white'
+
                         style={styles.icon}
                     />
                 </TouchableOpacity>

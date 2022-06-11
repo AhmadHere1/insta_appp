@@ -5,6 +5,7 @@ import { NavContainer } from "./src/services/navigation";
 export default function App() {
   return (
     // <Home />
-    <NewPostScreen />
+    // <NewPostScreen />
+    <NavContainer />
   );
 }

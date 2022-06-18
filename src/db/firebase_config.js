@@ -1,22 +1,20 @@
-import * as firebase from 'firebase';
-import '@firebase/firestore';
-
-
-
-
-
-
+// Import the functions you need from the SDKs you need
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 const firebaseConfig = {
-    apiKey: "AIzaSyDAWcT5qFuPUGjPygtZMNBMTd3nityrHDg",
-    authDomain: "instagarm-db2da.firebaseapp.com",
-    projectId: "instagarm-db2da",
-    storageBucket: "instagarm-db2da.appspot.com",
-    messagingSenderId: "825314185162",
-    appId: "1:825314185162:web:38b18f6c21e072731ec933",
-    measurementId: "G-PMFW75ZNM3"
+    apiKey: "AIzaSyClQktcdmrynomJafFr9JYKSxRHB015JCE",
+    authDomain: "instagram-clone-93a2b.firebaseapp.com",
+    projectId: "instagram-clone-93a2b",
+    storageBucket: "instagram-clone-93a2b.appspot.com",
+    messagingSenderId: "318803679503",
+    appId: "1:318803679503:web:30eddb76a62d6a4a3cc67a",
+    measurementId: "G-WH9YHBM6YY"
 };
 
+// Initialize Firebase
 if (firebase.apps.length > 0 === false) {
     firebase.initializeApp(firebaseConfig);
 }
+
 export { firebase };

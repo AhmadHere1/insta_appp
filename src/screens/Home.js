@@ -3,7 +3,6 @@ import React from 'react'
 import { Header } from '../components/HomeScreen/Header';
 import { Stories } from '../components/HomeScreen/Stories';
 import { PostComponent } from '../components/HomeScreen/PostComponent';
-// import { StackRouter } from '@react-navigation/native';
 import { POSTS } from '../database/posts';
 import { BottomTabs } from '../components/HomeScreen/BottomTabs';
 

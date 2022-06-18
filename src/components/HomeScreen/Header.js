@@ -1,14 +1,17 @@
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
 import React from 'react'
-import { MaterialIcons } from '@expo/vector-icons';
+
 import { Fontisto } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
-import { StatusBar } from 'expo-status-bar';
+
+
 
 const Header = ({ navigation }) => {
     return (
         <View style={styles.mainContainer}>
-            <TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => navigation.navigate('LoginScreen')}
+            >
                 <Image source={{ uri: 'https://3.bp.blogspot.com/-gyfM-b0vook/XGVSggQTqvI/AAAAAAAAAzU/u66Ogz2Xm0oNDfA6M9xD_A0BaNyAdcURACLcBGAs/s1600/unnamed%2B%25281%2529.png' }}
                     style={styles.logo}
                 />
